@@ -25,7 +25,7 @@
   margin-left: 15px;
   margin-top: 15px;
   border-radius: 20px;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .wrapper .sidebar h2{
@@ -64,7 +64,6 @@
  
 .wrapper .main_content{
   width: 100%;
-
 }
 .wrapper .main_content .todayBtn{
     width: 130px;
@@ -119,7 +118,7 @@ width: 120px;
   margin-left: -220px;
 }
 .image2{
-  height:60px;
+  height:70px;
 }
 .span{
  font-weight: normal;
@@ -182,3 +181,15 @@ width: 120px;
   100% {
     opacity: 1;
     transform: rotate(360deg); } }
+
+@media screen and (max-width: 1024px){
+  .sidebar{
+    display:none;
+  }
+  .progress-report{
+    margin-bottom: 10px;
+  }
+  .filter_button{
+    margin-bottom: 10px;
+  }
+}
