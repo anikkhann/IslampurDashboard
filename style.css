@@ -17,7 +17,8 @@
 
 }
 
-.wrapper .sidebar{
+.wrapper #sidebar{
+  
   width: 200px;
   height: 100%;
   background: #007356;
@@ -25,39 +26,45 @@
   margin-left: 15px;
   margin-top: 15px;
   border-radius: 20px;
-  /* position: fixed; */
+  position: fixed;
 }
 
-.wrapper .sidebar h2{
+/* .wrapper #sidebar:hover,
+#sidebar.active{
+  width:300px;
+}  */
+
+.wrapper #sidebar h2{
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.wrapper .sidebar ul li{
+.wrapper #sidebar ul li{
   padding: 15px;
   border-bottom: 1px solid #bdb8d7;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   border-top: 1px solid rgba(255,255,255,0.05);
 }    
 
-.wrapper .sidebar ul li a{
+.wrapper #sidebar ul li a{
   /* color: #bdb8d7; */
   color: #fff;
   display: block;
   
 }
 
-.wrapper .sidebar ul li a .fas{
+.wrapper #sidebar ul li a .fas{
+
   width: 25px;
 }
 
-.wrapper .sidebar ul li:hover{
+.wrapper #sidebar ul li:hover{
   background-color: #594f8d;
 }
     
-.wrapper .sidebar ul li:hover a{
+.wrapper #sidebar ul li:hover a{
   color: #fff;
   text-decoration: none;
 }
@@ -126,7 +133,64 @@ width: 120px;
 .span2{
   color: #4339F2;
 }
+ .toggle-btn{
+   position: absolute;
+   left: 128%;
+   top: 15px;
 
+ }
+ .toggle-btn span{
+  
+  display: block;
+   background-color:  #007356;
+   width:30px;
+   height: 5px;
+   margin: 3px;
+ }
+ /* .active{
+  left: 0;
+ } */
+
+ .active{
+  width: 200px;
+  height: 100%;
+  background: #007356;
+  padding: 30px 0px;
+  left: -18%;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 20px;
+  position: fixed;
+}
+.containerTest{
+  width: 100vw;
+}
+ /* .toogle{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #330748;
+  cursor: pointer;
+
+}
+.toogle.active{
+  background: #ea1d63;
+}
+.toogle:before{
+  content: '\f0c9';
+  font-family: "fontAwesome";
+  width: 100%;
+  height:100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px;
+  color:#fff;
+} 
+.toogle:active:before{
+  content: '\f00d';
+} */
 /*circle progress bar */
 .progress-circle {
   position: relative;
@@ -182,14 +246,71 @@ width: 120px;
     opacity: 1;
     transform: rotate(360deg); } }
 
-@media screen and (max-width: 1024px){
-  .sidebar{
+/* @media screen and (max-width: 1024px){
+  #sidebar{
     display:none;
-  }
+  } 
   .progress-report{
     margin-bottom: 10px;
   }
   .filter_button{
     margin-bottom: 10px;
+    margin-left: 100px;
+    /* margin-right: -100px; */
+  /* }
+  
+}  */
+/* responsive iphone 6/7/8 */
+@media screen and (max-width: 375px){
+  #sidebar{
+    display:none;
   }
+  .filter_area{
+  margin-left: 200px;
+ 
+  }
+  .filter_button{
+    margin-bottom: 10px;
+  }
+  .progress-report{
+    /* margin-bottom: 10px; */
+    margin-left: 200px;
+    margin-top:5px;
+  }
+  .sell-remain-repeat{
+    margin-left: 200px;
+    
+  }
+ 
+ .sell-remain-repeat2{
+   margin-left: 20px;
+ }
+.btn2{
+  margin-left: 200px;
+  
+}
+
+ .chart{
+   margin-left: 180px;
+ }
+ .new-orders{
+   margin-left: 190px;
+ }
+ .new-orders2{
+  margin-left: 450px;
+  
+ }
+ .estimated-profit{
+  margin-top: -70px;
+ }
+ .task-remain-repeat{
+  margin-left: 150px;
+}
+.chart2{
+  margin-left: 180px;
+}
+#chart_div3{
+  margin-left: 180px;
+}
+
 }
