@@ -133,6 +133,9 @@ width: 120px;
 .span2{
   color: #4339F2;
 }
+.chart4{
+  margin-top: 10px;
+}
  .toggle-btn{
    position: absolute;
    left: 128%;
@@ -245,22 +248,285 @@ width: 120px;
   100% {
     opacity: 1;
     transform: rotate(360deg); } }
-
-/* @media screen and (max-width: 1024px){
-  #sidebar{
-    display:none;
-  } 
-  .progress-report{
+/* ipad pro */
+@media screen and (max-width: 1024px){
+ 
+  /* .progress-report{
     margin-bottom: 10px;
   }
   .filter_button{
     margin-bottom: 10px;
     margin-left: 100px;
     /* margin-right: -100px; */
-  /* }
   
-}  */
-/* responsive iphone 6/7/8 */
+    .filter_area{
+      margin-left: 10px;
+      margin-top: 15px;
+      }
+      .progress {
+        display: -ms-flexbox;
+        display: flex;
+        height: 12%;
+        width: 90px;
+        overflow: hidden;
+        line-height: 0;
+        font-size: .75rem;
+        background-color: #fff;
+        border-radius: .25rem;
+    }
+      .progress-report{
+       
+        margin-top: 5px;
+      }
+      
+      
+     .sell-remain-repeat{
+       margin-left: 40px; 
+     } 
+     .sell-remain-repeat2{
+       margin-left: 18px;
+     } 
+     /* .btn2{
+       margin-left: 25px;
+     } */
+     .chart{
+       margin-left: 50px;
+     width: 20px;
+     }  
+    .sell-remain-repeat3{
+      margin-left: 170px;
+    }
+    .sell-remain-repeat4{
+      margin-left: 400px;
+      margin-top: -40px;
+    }
+    .chart4{
+      margin-left: 180px;
+      
+    }
+    .new-orders{
+      margin-left: 170px;
+    
+    }
+    .new-orders2{
+      margin-left: 450px;
+      
+     
+    }
+    .estimated-profit{
+      margin-top: -70px;
+    }
+    
+    /* .sell-remain-repeat5{
+     
+     
+    } */
+    .chart2{
+      margin-top: 350px;
+      margin-left: -500px; 
+     
+    }
+   
+   
+   } 
+ 
+  
+
+/* ipad */
+@media screen and (max-width: 768px){
+  .filter_area{
+  margin-left: 40px;
+  margin-top: 10px;
+  }
+  .progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 12%;
+    width: 90px;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .75rem;
+    background-color: #fff;
+    border-radius: .25rem;
+}
+  .progress-report{
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+  
+  
+ .sell-remain-repeat{
+   margin-left: 40px; 
+ } 
+ .sell-remain-repeat2{
+   margin-left: 18px;
+ } 
+ /* .btn2{
+   margin-left: 25px;
+ } */
+ .chart{
+   margin-left: 50px;
+ width: 20px;
+ }  
+.sell-remain-repeat3{
+  margin-left: 170px;
+}
+.sell-remain-repeat4{
+  margin-left: 400px;
+  margin-top: -40px;
+}
+.chart4{
+  margin-left: 180px;
+  
+}
+.new-orders{
+  margin-left: 170px;
+
+}
+.new-orders2{
+  margin-left: 450px;
+  
+ 
+}
+.estimated-profit{
+  margin-top: -70px;
+}
+
+/* .sell-remain-repeat5{
+ 
+ 
+} */
+.chart2{
+  margin-top: 350px;
+  margin-left: -350px;
+
+}
+
+}
+
+/* surface duo */
+@media screen and (max-width: 540px){
+  #sidebar{
+    display:none;
+  }
+  .filter_area{
+  margin-left: 200px;
+ 
+  }
+  .filter_button{
+    margin-bottom: 10px;
+  }
+  .progress-report{
+    /* margin-bottom: 10px; */
+    margin-left: 200px;
+    margin-top:5px;
+  }
+  .sell-remain-repeat{
+    margin-left: 200px;
+    
+  }
+ 
+ .sell-remain-repeat2{
+   margin-left: 20px;
+ }
+.btn2{
+  margin-left: 200px;
+  
+}
+
+ .chart{
+   margin-left: 150px;
+ }
+ .chart8{
+  margin-top: 45px;
+  margin-left: -150px;
+ }
+ .new-orders{
+   margin-left: 150px;
+   margin-top: 10px;
+ }
+ /* .new-orders50{
+   margin-top: 100px;
+ } */
+ .new-orders2{
+  margin-left: 450px;
+  
+ }
+ .estimated-profit{
+  margin-top: -70px;
+ }
+ .task-remain-repeat{
+  margin-left: 150px;
+}
+.chart2{
+  margin-left: 180px;
+  margin-top: -5px;
+}
+#chart_div3{
+  margin-left: 180px;
+}
+
+}
+
+/* responsive pixel 2 & pixel 2xl iphone 6/7/8 plus */
+@media screen and (max-width: 414px) and (min-width: 411px){
+  #sidebar{
+    display:none;
+  }
+  .filter_area{
+  margin-left: 200px;
+ 
+  }
+  .filter_button{
+    margin-bottom: 10px;
+  }
+  .progress-report{
+    /* margin-bottom: 10px; */
+    margin-left: 200px;
+    margin-top:5px;
+  }
+  .sell-remain-repeat{
+    margin-left: 200px;
+    
+  }
+ 
+ .sell-remain-repeat2{
+   margin-left: 20px;
+ 
+ }
+.btn2{
+  margin-left: 200px;
+  
+}
+
+ .chart{
+   margin-left: 180px;
+ }
+ .new-orders{
+   margin-left: 190px;
+ }
+ .new-orders2{
+  margin-left: 450px;
+  
+ }
+ .estimated-profit{
+  margin-top: -70px;
+ }
+ .task-remain-repeat{
+  margin-left: 150px;
+}
+.chart2{
+  margin-left: 180px;
+  margin-top: -10px;
+}
+#chart_div3{
+  margin-left: 180px;
+}
+.chart8{ 
+  margin-top: 10px;
+}
+}
+/* responsive iphone 6/7/8 & iphone x & moto g4 galaxy s5 & iphone 5/se */
 @media screen and (max-width: 375px){
   #sidebar{
     display:none;
@@ -308,9 +574,26 @@ width: 120px;
 }
 .chart2{
   margin-left: 180px;
+  margin-top: -5px;
 }
 #chart_div3{
   margin-left: 180px;
 }
+.chart8{ 
+  margin-top: 10px;
+} 
 
+}
+
+@media screen and (max-width: 280px){
+  .topsellingItem{
+    margin-left: 330px;
+    margin-top: -40px;
+  }
+  /* .sell-remain-repeat{
+    margin-top: 10px;
+  }*/
+   .chart8{ 
+    margin-top: 10px;
+  } 
 }
