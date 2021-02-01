@@ -1,0 +1,7 @@
+.feat-show{
+    position: static;
+    display: none;
+  }
+  ul .feat-show.show{
+    display: block;
+  }
