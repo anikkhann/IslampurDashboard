@@ -11,6 +11,18 @@
 .body{
     background-color:  #E5E5E5;
 }
+.menulines{
+
+   position: absolute;
+    left: 0;
+   
+}
+.topHead{
+    position: relative;
+    width:100%;
+    height: 15px;
+ 
+}
 .wrapper{
   display: flex;
   position: relative;
@@ -18,11 +30,16 @@
 }
 
 .wrapper #sidebar{
-  
-  width: 200px;
+ 
+ width: 200px;
   height: 100%;
   background: #007356;
   padding: 30px 0px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all 0.5s;
   margin-left: 15px;
   margin-top: 15px;
   border-radius: 20px;
@@ -49,7 +66,7 @@
 }    
 
 .wrapper #sidebar ul li a{
-  /* color: #bdb8d7; */
+
   color: #fff;
   display: block;
   
@@ -136,7 +153,7 @@ width: 120px;
 .chart4{
   margin-top: 10px;
 }
- .toggle-btn{
+ /* .toggle-btn{
    position: absolute;
    left: 128%;
    top: 15px;
@@ -149,12 +166,12 @@ width: 120px;
    width:30px;
    height: 5px;
    margin: 3px;
- }
+ } */
  /* .active{
   left: 0;
  } */
 
- .active{
+ /* .active{
   width: 200px;
   height: 100%;
   background: #007356;
@@ -164,7 +181,7 @@ width: 120px;
   margin-top: 15px;
   border-radius: 20px;
   position: fixed;
-}
+} */
 .containerTest{
   width: 100vw;
 }
@@ -234,12 +251,8 @@ width: 120px;
   font-weight: 600;
   color: #8b8b8b; }
 
-
-
 .progress-circle.progress-67:after {
   background-image: linear-gradient(-28.8deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
-
-
 
 @-webkit-keyframes colorload {
   0% {
@@ -251,14 +264,6 @@ width: 120px;
 /* ipad pro */
 @media screen and (max-width: 1024px){
  
-  /* .progress-report{
-    margin-bottom: 10px;
-  }
-  .filter_button{
-    margin-bottom: 10px;
-    margin-left: 100px;
-    /* margin-right: -100px; */
-  
     .filter_area{
       margin-left: 10px;
       margin-top: 15px;
@@ -286,9 +291,7 @@ width: 120px;
      .sell-remain-repeat2{
        margin-left: 18px;
      } 
-     /* .btn2{
-       margin-left: 25px;
-     } */
+    
      .chart{
        margin-left: 50px;
      width: 20px;
@@ -316,22 +319,15 @@ width: 120px;
     .estimated-profit{
       margin-top: -70px;
     }
-    
-    /* .sell-remain-repeat5{
-     
-     
-    } */
+   
     .chart2{
       margin-top: 350px;
       margin-left: -500px; 
      
     }
    
-   
    } 
  
-  
-
 /* ipad */
 @media screen and (max-width: 768px){
   .filter_area{
@@ -361,9 +357,7 @@ width: 120px;
  .sell-remain-repeat2{
    margin-left: 18px;
  } 
- /* .btn2{
-   margin-left: 25px;
- } */
+ 
  .chart{
    margin-left: 50px;
  width: 20px;
@@ -392,10 +386,6 @@ width: 120px;
   margin-top: -70px;
 }
 
-/* .sell-remain-repeat5{
- 
- 
-} */
 .chart2{
   margin-top: 350px;
   margin-left: -350px;
@@ -406,23 +396,50 @@ width: 120px;
 
 /* surface duo */
 @media screen and (max-width: 540px){
-  #sidebar{
-    display:none;
+
+  .menulines{
+
+    position: absolute;
+     left: 0;
+    
+ }
+ .topHead{
+     position: relative;
+     width:100%;
+     height: 20px;
+  
+ }
+ .wrapper #sidebar{
+  
+   
+   width: 250px;
+    height: 100%;
+    background: #007356;
+    padding: 30px 0px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    position: fixed;
   }
   .filter_area{
-  margin-left: 200px;
+  margin-left: 400px;
  
   }
   .filter_button{
     margin-bottom: 10px;
   }
   .progress-report{
-    /* margin-bottom: 10px; */
-    margin-left: 200px;
+    
+    margin-left: 400px;
     margin-top:5px;
   }
   .sell-remain-repeat{
-    margin-left: 200px;
+    margin-left: 400px;
     
   }
  
@@ -430,26 +447,24 @@ width: 120px;
    margin-left: 20px;
  }
 .btn2{
-  margin-left: 200px;
+  margin-left: 400px;
   
 }
 
  .chart{
-   margin-left: 150px;
+   margin-left: 350px;
  }
  .chart8{
   margin-top: 45px;
   margin-left: -150px;
  }
  .new-orders{
-   margin-left: 150px;
+   margin-left: 350px;
    margin-top: 10px;
  }
- /* .new-orders50{
-   margin-top: 100px;
- } */
+ 
  .new-orders2{
-  margin-left: 450px;
+  margin-left: 620px;
   
  }
  .estimated-profit{
@@ -459,7 +474,7 @@ width: 120px;
   margin-left: 150px;
 }
 .chart2{
-  margin-left: 180px;
+  margin-left: 380px;
   margin-top: -5px;
 }
 #chart_div3{
@@ -470,23 +485,48 @@ width: 120px;
 
 /* responsive pixel 2 & pixel 2xl iphone 6/7/8 plus */
 @media screen and (max-width: 414px) and (min-width: 411px){
-  #sidebar{
-    display:none;
-  }
+    .menulines{
+
+        position: absolute;
+         left: 0;
+        
+     }
+     .topHead{
+         position: relative;
+         width:100%;
+         height: 20px;
+      
+     }
+     .wrapper #sidebar{
+      
+       width: 200px;
+        height: 100%;
+        background: #007356;
+        padding: 30px 0px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: all 0.5s;
+        margin-left: 15px;
+        margin-top: 15px;
+        border-radius: 20px;
+        position: fixed;
+      }
+    
   .filter_area{
-  margin-left: 200px;
+  margin-left: 300px;
  
   }
   .filter_button{
     margin-bottom: 10px;
   }
   .progress-report{
-    /* margin-bottom: 10px; */
-    margin-left: 200px;
+    margin-left: 300px;
     margin-top:5px;
   }
   .sell-remain-repeat{
-    margin-left: 200px;
+    margin-left: 300px;
     
   }
  
@@ -495,18 +535,18 @@ width: 120px;
  
  }
 .btn2{
-  margin-left: 200px;
+  margin-left: 300px;
   
 }
 
  .chart{
-   margin-left: 180px;
+   margin-left: 300px;
  }
  .new-orders{
-   margin-left: 190px;
+   margin-left: 300px;
  }
  .new-orders2{
-  margin-left: 450px;
+  margin-left: 550px;
   
  }
  .estimated-profit{
@@ -516,7 +556,7 @@ width: 120px;
   margin-left: 150px;
 }
 .chart2{
-  margin-left: 180px;
+  margin-left: 300px;
   margin-top: -10px;
 }
 #chart_div3{
@@ -528,42 +568,70 @@ width: 120px;
 }
 /* responsive iphone 6/7/8 & iphone x & moto g4 galaxy s5 & iphone 5/se */
 @media screen and (max-width: 375px){
-  #sidebar{
-    display:none;
+ 
+  .menulines{
+
+    position: absolute;
+     left: 0;
+    
+ }
+ .topHead{
+     position: relative;
+     width:100%;
+     height: 20px;
+  
+ }
+ .wrapper #sidebar{
+  
+
+   width: 200px;
+    height: 100%;
+    background: #007356;
+    padding: 30px 0px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    position: fixed;
   }
   .filter_area{
-  margin-left: 200px;
+  margin-left: 300px;
  
   }
   .filter_button{
     margin-bottom: 10px;
   }
   .progress-report{
-    /* margin-bottom: 10px; */
-    margin-left: 200px;
+  
+    margin-left: 300px;
     margin-top:5px;
   }
   .sell-remain-repeat{
-    margin-left: 200px;
+    margin-left: 300px;
     
   }
  
  .sell-remain-repeat2{
-   margin-left: 20px;
+   margin-left: 430px;
+   margin-top: -50px;
  }
 .btn2{
-  margin-left: 200px;
+  margin-left: -120px;
   
 }
 
  .chart{
-   margin-left: 180px;
+   margin-left: 300px;
  }
  .new-orders{
-   margin-left: 190px;
+   margin-left: 300px;
  }
  .new-orders2{
-  margin-left: 450px;
+  margin-left: 550px;
   
  }
  .estimated-profit{
@@ -573,7 +641,7 @@ width: 120px;
   margin-left: 150px;
 }
 .chart2{
-  margin-left: 180px;
+  margin-left: 300px;
   margin-top: -5px;
 }
 #chart_div3{
@@ -587,12 +655,10 @@ width: 120px;
 
 @media screen and (max-width: 280px){
   .topsellingItem{
-    margin-left: 330px;
+    margin-left: 430px;
     margin-top: -40px;
   }
-  /* .sell-remain-repeat{
-    margin-top: 10px;
-  }*/
+  
    .chart8{ 
     margin-top: 10px;
   } 

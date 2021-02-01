@@ -47,8 +47,10 @@
 
         chart.draw(data, google.charts.Bar.convertOptions(options));
       }
-      </script>
+    </script>
       <!-- end -->
+
+      
       <!-- selling piechart -->
       <script
       type="text/javascript"
@@ -95,6 +97,8 @@
       }
     </script>
     <!-- end -->
+
+
     <!--Load the AJAX API pie chart-->
     <script
       type="text/javascript"
@@ -130,7 +134,7 @@
         chart.draw(data, options);
       }
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       function toggleall(){
 
         document.getElementById("sidebar").classList.toggle("active");
@@ -139,7 +143,7 @@
       }
         
     
-    </script>
+    </script> -->
     <style>
       .progress {
     display: -ms-flexbox;
@@ -156,21 +160,32 @@
     </style>
   </head>
   <body class="body">
+      <header>
+        <div class="topHead" id="topHead"> 
+            <button   class="menulines btn px-2 px-md-3 ml-3" style="color:#007356;" onclick="openNav()">&#9776;</button> 
+        </div>
+      </header>
       <div class="row wrapper">
-          <!-- sidebar button -->
-        
-        <div class="col-md-3" >
           
+          <!-- sidebar button -->
+       
+        <div class="col-md-3" >
+         
           <div id="sidebar">
-            <div class="toggle-btn" style="cursor: pointer" onclick="toggleall()" >
+            <!-- <div class="toggle-btn" style="cursor: pointer" onclick="toggleall()" >
               <span></span>
               <span></span>
               <span></span>
-            </div>
+            </div> -->
+            
+         
             
             <h2>Islampur</h2>
   
             <ul>
+                <li>
+                    <a href="javascript:void(0)" class="closebtn " onclick="closeNav()"><i class="fas fa-times"></i>Cancel</a>
+                </li>
               <li>
                 <a href="#"><i class="fas fa-columns"></i>Dashboard</a>
               </li>
@@ -200,12 +215,13 @@
         
         </div>
       
-       
 
         <div class="col-md-9 main_content">
-        
+           
           <div class="row mt-5 btns">
-       
+           
+                
+         
             <div class="col-12 col-md-2 filter_area ">
               <button type="button" class="btn px-2 ml-3 px-md-3 todayBtn filter_button">Today</button>
             </div>
@@ -236,12 +252,11 @@
             <button type="button" class="btn px-2 px-md-3 ml-3 calenderBtn filter_button">
               <i class="far fa-calendar"></i> Calender
             </button>
+
             </div>
+          
+          
            
-          
-         
-          
-            <div class="col-12 col-md-2"></div> 
           </div>
   
           <div class="row mt-5">
@@ -541,19 +556,22 @@
        
     </div>
      
-    <!-- <div class="toogle" onclick="toogleMenu()">
-
-    </div>
-<script type="text/javascript">
-  function toogleMenu(){
-    let sidebar = document.querySelector('#sidebar');
-   
-    let toogle = document.querySelector('.toogle');
-    navigation.classList.toggle('active');
-    toogle.classList.toogle('active');
-
-  }
-</script> -->
+  
+<script>
+  
+const openNav = () => {
+    document.getElementById("sidebar").style.width = "200px"
+    document.getElementById("topHead").style.display = "none"
+}
+const closeNav = () => {
+    document.getElementById("sidebar").style.width = "0px"
+    document.getElementById("topHead").style.display = "block"
+}
+window.addEventListener('DOMContentLoaded', () => {
+  document.getElementById("topHead").style.display = "none";
+});
+  
+</script> 
    
    
     <script
