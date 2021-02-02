@@ -28,7 +28,16 @@
   position: relative;
 
 }
-
+.closebtn{
+  position: absolute;
+  margin-left: 160px;
+  top: 0;
+ 
+  color: #fff;
+}
+.closebtn:hover{
+  color: #fff;
+}
 .wrapper #sidebar{
  
  width: 200px;
@@ -263,7 +272,14 @@ width: 120px;
     transform: rotate(360deg); } }
 /* ipad pro */
 @media screen and (max-width: 1024px){
- 
+  .closebtn{
+    position: absolute;
+    margin-left: 170px;
+    top: 0;
+    margin-top: 7px;
+   
+    color: #fff;
+  }
     .filter_area{
       margin-left: 10px;
       margin-top: 15px;
@@ -432,6 +448,14 @@ width: 120px;
     border-radius: 20px;
     position: fixed;
   }
+  .closebtn{
+    position: absolute;
+    margin-left: 220px;
+    top: 0;
+    margin-top: 7px;
+   
+    color: #fff;
+  }
   .filter_area{
   margin-left: 400px;
  
@@ -519,6 +543,14 @@ width: 120px;
         border-radius: 20px;
         position: fixed;
       }
+      .closebtn{
+        position: absolute;
+        margin-left: 170px;
+        top: 0;
+        margin-top: 7px;
+       
+        color: #fff;
+      }
     
   .filter_area{
   margin-left: 300px;
@@ -603,6 +635,14 @@ width: 120px;
     margin-top: 15px;
     border-radius: 20px;
     position: fixed;
+  }
+  .closebtn{
+    position: absolute;
+    margin-left: 170px;
+    top: 0;
+    margin-top: 7px;
+   
+    color: #fff;
   }
   .filter_area{
   margin-left: 300px;

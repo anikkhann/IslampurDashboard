@@ -5,3 +5,24 @@
   ul .feat-show.show{
     display: block;
   }
+  .feat-show2{
+    position: static;
+    display: none;
+  }
+  ul .feat-show2.show{
+    display: block;
+  }
+  .feat-show3{
+    position: static;
+    display: none;
+  }
+  ul .feat-show3.show{
+    display: block;
+  }
+  .feat-show4{
+    position: static;
+    display: none;
+  }
+  ul .feat-show4.show{
+    display: block;
+  }

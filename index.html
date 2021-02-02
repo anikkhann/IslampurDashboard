@@ -178,46 +178,72 @@
               <span></span>
             </div> -->
             
-         
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
             
             <h2>Islampur</h2>
   
             <ul>
-                <li>
+                <!-- <li>
                     <a href="javascript:void(0)" class="closebtn " onclick="closeNav()"><i class="fas fa-times"></i>Cancel</a>
-                </li>
+                </li> -->
               <li>
                 <a href="#"><i class="fas fa-columns"></i>Dashboard</a>
               </li>
               <li>
-                <a href="#" class="feat-btn">Features
+                <a href="#" class="feat-btn">Product category
                   <span class="fas fa-caret-down first"></span>
                 </a>
                 <ul class="feat-show">
-                  <li><a href="#">Pages</a></li>
-                  <li><a href="#">Elements</a></li>
+                  <li><a href="#">Add New</a></li>
+                  <li><a href="#">Category List</a></li>
                 </ul>
             </li>
+            <li>
+              <a href="#" class="feat-btn2">Product
+                <span class="fas fa-caret-down first2"></span>
+              </a>
+              <ul class="feat-show2">
+                <li><a href="#">Add New</a></li>
+                <li><a href="#">Product List</a></li>
+                <li><a href="#">Bulk Uploader</a></li>
+                <li><a href="#">Bulk Editor</a></li>
+              </ul>
+          </li>
               <li>
-                <a href="#"><i class="fas fa-shopping-basket"></i>Order</a>
+                <a href="#"><i class="fas fa-shopping-basket"></i>Sale</a>
               </li>
               <li>
-                <a href="#"><i class="fas fa-file-alt"></i>Invoice</a>
+                <a href="#"><i class="fas fa-file-alt"></i>Orders</a>
               </li>
               <li>
+                <a href="#" class="feat-btn3">Expenses
+                  <span class="fas fa-caret-down first3"></span>
+                </a>
+                <ul class="feat-show3">
+                  <li><a href="#">Add New</a></li>
+                  <li><a href="#">Expenses List</a></li>
+                </ul>
+            </li>
+              <!-- <li>
                 <a href="#"><i class="fas fa-user"></i>Customer Data</a>
-              </li>
+              </li> -->
               <li>
-                <a href="#"><i class="fas fa-file-invoice-dollar"></i>Add Payment</a>
-              </li>
-              <li>
+                <a href="#" class="feat-btn4">Pages
+                  <span class="fas fa-caret-down first4"></span>
+                </a>
+                <ul class="feat-show4">
+                  <li><a href="#">Add New</a></li>
+                  <li><a href="#">Page List</a></li>
+                </ul>
+            </li>
+              <!-- <li>
                 <a href="#"><i class="fas fa-cloud-upload-alt"></i>Bulk Uploader</a>
               </li>
               <li>
                 <a href="#"><i class="fas fa-pen"></i>Bulk Editor</a>
               </li>
               <li>
-                <a href="#"><i class="fas fa-list-ul"></i>Product Category</a>
+                <a href="#"><i class="fas fa-list-ul"></i>Product Category</a> -->
               </li>
             </ul>
           </div>
@@ -654,6 +680,21 @@ window.addEventListener('DOMContentLoaded', () => {
           $('ul .feat-show').toggleClass("show");
           $('ul .first').toggleClass("rotate");
         });
+
+        $('.feat-btn2').click(function(){
+          $('ul .feat-show2').toggleClass("show");
+          $('ul .first2').toggleClass("rotate");
+        });
+
+        $('.feat-btn3').click(function(){
+          $('ul .feat-show3').toggleClass("show");
+          $('ul .first3').toggleClass("rotate");
+        });
+        $('.feat-btn4').click(function(){
+          $('ul .feat-show4').toggleClass("show");
+          $('ul .first4').toggleClass("rotate");
+        });
+
         // $('nav ul li').click(function(){
         //   $(this).addClass("active").siblings().removeClass("active");
         // });
