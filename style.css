@@ -321,9 +321,12 @@ width: 120px;
     }
    
     .chart2{
-      margin-top: 350px;
+      margin-top: 200px;
       margin-left: -500px; 
      
+    }
+    .closingStock{
+      margin-left: 20px;
     }
    
    } 
@@ -377,6 +380,9 @@ width: 120px;
   margin-left: 170px;
 
 }
+.closingStock{
+  margin-left: 50px;
+}
 .new-orders2{
   margin-left: 450px;
   
@@ -387,7 +393,7 @@ width: 120px;
 }
 
 .chart2{
-  margin-top: 350px;
+  margin-top: 200px;
   margin-left: -350px;
 
 }
