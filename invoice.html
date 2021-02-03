@@ -140,7 +140,7 @@
                     <input
                       type="text"
                       list="browsers"
-                      class="product_name form-rounded"
+                      class="product_name form-rounded px-1"
                       name="name1"
                       placeholder="Product Name"
                       onkeyup="GetDetails(this.value)"
@@ -151,7 +151,7 @@
                     <input
                       type="text"
                       name="sku1"
-                      class="SKU form-rounded"
+                      class="SKU form-rounded px-1"
                       placeholder="Product SKU"
                     />
                   </td>
@@ -162,7 +162,7 @@
                     <input
                       type="number"
                       step=".25"
-                      class="quantity form-rounded"
+                      class="quantity form-rounded px-1"
                       min="0.25"
                       name="quantity1"
                       placeholder="Quantity"
@@ -173,8 +173,9 @@
                   <td class="">
                     <input
                       type="text"
-                      class="perYard form-rounded"
+                      class="perYard form-rounded px-1"
                       name="price1"
+                      placeholder="Price"
                       value=""
                     />
                   </td>
@@ -223,7 +224,7 @@
                   <input
                     type="number"
                     name="delivery"
-                    class="delivery_charge form-rounded"
+                    class="delivery_charge form-rounded px-2"
                     placeholder="৳"
                     oninput="calculate()"
                     required
@@ -239,7 +240,7 @@
                   <input
                     type="text"
                     name="discount"
-                    class="discount form-rounded"
+                    class="discount form-rounded px-2"
                     placeholder="৳"
                     oninput="calculate()"
                   />
@@ -262,7 +263,7 @@
                   <input
                     type="text"
                     name="advance"
-                    class="advance form-rounded"
+                    class="advance form-rounded px-2"
                     placeholder="৳"
                     oninput="calculate()"
                   />
@@ -290,6 +291,7 @@
             <button
               class="btn btn-outline-success printButton"
               style="justify-content: text-align-center"
+              onclick="addMore()"
             >
               Print
             </button>
@@ -313,5 +315,121 @@
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      var a = 1;
+      function addMore() {
+        a++;
+        var browserAgain = document.getElementById("browsers");
+        var nm = "name" + a;
+        var sku = "sku" + a;
+        var image = "image" + a;
+        var quantity = "quantity" + a;
+        var price = "price" + a;
+        var tbody = document.getElementById("tbody");
+        var totalRows = tbody.rows.length;
+        if (
+          document.getElementsByClassName("product_name")[totalRows - 1]
+            .value == "" ||
+          undefined
+        ) {
+          alert("Insert the details of last product");
+        } else {
+          // a++;
+          var tbody = document.getElementById("tbody");
+          var tr = document.createElement("tr");
+          var tdSerialNo = document.createElement("td");
+          var tdProductName = document.createElement("td");
+
+          var tdSKU = document.createElement("td");
+          var tdImage = document.createElement("td");
+          var tdQuan = document.createElement("td");
+          var tdPrice = document.createElement("td");
+          var tdTotal = document.createElement("td");
+          tdTotal.setAttribute("class", "totalAmount");
+
+          var tdDelete = document.createElement("td");
+          var deleteButton = document.createElement("BUTTON");
+          deleteButton.innerText = "Delete";
+          deleteButton.setAttribute("class", "deleteBtn");
+          deleteButton.setAttribute(
+            "style",
+            "color:red;border:none;font-weight:bold"
+          );
+          // var deleteButton = document.createElement("button");
+          // deleteButton.innerText= "Delete";
+          // deleteButton.setAttribute('onclick','myFunc(this)');
+          var input1 = document.createElement("input");
+          input1.setAttribute("type", "text");
+          input1.setAttribute("placeholder", "Product Name");
+          input1.setAttribute("list", "browsers");
+          input1.setAttribute("name", nm);
+          input1.setAttribute("class", "product_name");
+          input1.setAttribute("onkeyup", "GetDetails(this.value)");
+          var input2 = document.createElement("input");
+          input2.setAttribute("type", "text");
+          input2.setAttribute("placeholder", "Product SKU");
+          input2.setAttribute("name", sku);
+          input2.setAttribute("class", "SKU");
+          var input3 = document.createElement("input");
+          input3.setAttribute("type", "number");
+          input3.setAttribute("placeholder", "Quantity");
+          input3.setAttribute("name", quantity);
+          input3.setAttribute("class", "quantity");
+          input3.setAttribute("step", ".25");
+          input3.setAttribute("min", ".25");
+
+          input3.setAttribute("onchange", "calculate()");
+          var input4 = document.createElement("input");
+          input4.setAttribute("value", "");
+          input4.setAttribute("class", "perYard");
+          input4.setAttribute("name", price);
+
+          var input5 = document.createElement("input");
+
+          input5.setAttribute("type", "hidden");
+
+          input5.setAttribute("name", image);
+          input5.setAttribute("class", "image");
+
+          tdPrice.appendChild(input4);
+          tdProductName.appendChild(input1);
+          tdProductName.appendChild(browserAgain);
+          tdSKU.appendChild(input2);
+          tdQuan.appendChild(input3);
+          tdDelete.appendChild(deleteButton);
+          tdImage.appendChild(input5);
+
+          // tdSerialNo.innerText = a;
+          // tr.innerHTML+=tdSerialNo.outerHTML+tdProductName.outerHTML+tdSKU.outerHTML+tdQuan.outerHTML+tdPrice.outerHTML+tdTotal.outerHTML;
+          tr.innerHTML +=
+            tdSerialNo.outerHTML +
+            tdProductName.outerHTML +
+            tdSKU.outerHTML +
+            tdQuan.outerHTML +
+            tdPrice.outerHTML +
+            tdTotal.outerHTML +
+            tdDelete.outerHTML +
+            tdImage.outerHTML;
+          tbody.appendChild(tr);
+        }
+      }
+    </script>
+    <script>
+      const tableEl = document.querySelector("table");
+      tableEl.addEventListener("click", onDeleteRow);
+      function onDeleteRow(e) {
+        if (!e.target.classList.contains("deleteBtn")) {
+          return;
+        }
+
+        const btn = e.target;
+        var totalRows = tbody.rows.length;
+        if (totalRows > 1) {
+          btn.closest("tr").remove();
+          calculate();
+        }
+      }
+    </script>
   </body>
 </html>
