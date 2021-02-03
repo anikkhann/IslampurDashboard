@@ -1,0 +1,71 @@
+.tableWidth{
+    width: 80%;
+    /* margin-left: 100px; */
+}
+
+.submiButton{
+    position: relative;
+   
+}
+.printButton{
+    position: absolute;
+   right: 180px;
+}
+.form-rounded{
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 1024px){
+    .submiButton{
+        position: relative;
+        left: 5px;
+       
+    }
+    .printButton{
+        position: absolute;
+       left: 370px;
+    }
+ }
+ @media screen and (max-width: 768px){
+    .submiButton{
+        position: relative;
+        left: 50px;
+       
+    }
+    .printButton{
+        position: absolute;
+       left: 300px;
+    }
+    .tableWidth{
+        width: 80%;
+       
+    }
+    .billing3{
+        width: 150px;
+    }
+    .subtotal_table{
+        margin-left: 100px;
+    }
+ }
+ /* responsive galaxys5 moto G4 pixel 2 & pixel 2 xl  iphone 5/SE iphone 6/7/8 & 6/7/8 plus iphone x  surface duo and galaxy-fload*/
+ @media screen and (max-width:540px) and (min-width: 280px){
+    .billing{
+        margin-left: 350px;
+    }
+    .billing2{
+        margin-left: 260px;
+    }
+    .subtotal_table{
+        margin-left: 500px;
+    }
+    .submiButton{
+        position: relative;
+        left: 200px;
+       
+    }
+    .printButton{
+        position: absolute;
+       left: 300px;
+    }
+ } 
+
